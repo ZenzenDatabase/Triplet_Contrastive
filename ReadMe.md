@@ -1,0 +1,15 @@
+# Contrastive vs. Triplet Loss: Variance & Optimization Analysis
+
+This repository provides code and experiments for comparing contrastive and triplet loss functions in deep metric learning. We analyze how each loss shapes embedding geometry—focusing on intra-class dispersion and inter-class separation—and examine optimization behavior ("greediness") via diagnostics such as loss decay, active ratio, and gradient norms.
+
+## Features
+- **Synthetic Data Generation:** Controlled 128‑D toy datasets with tunable cluster tightness, label overlap, and outliers.
+- **Model Architectures:**
+  - Simple MLP for toy experiments
+  - ConvNetEmbedder (MNIST/CIFAR)
+  - Vision Transformer (ViT‑B/32) for fine‑grained retrieval (CIFAR‑10, CARS196, CUB‑200‑2011) via HuggingFace¹
+- **Loss Functions:** PyTorch implementations of contrastive and triplet losses, with margin sampling strategies.
+- **Training & Evaluation:** Scripts for training on synthetic and real data, and evaluation metrics including Recall@K and embedding visualization (t‑SNE).
+- **Diagnostics:** Automatically track and plot loss curves, active ratio, and gradient norms to quantify optimization patterns.
+
+## Repository Structure
