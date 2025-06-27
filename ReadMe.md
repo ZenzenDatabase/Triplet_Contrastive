@@ -14,24 +14,25 @@ This repository provides code and experiments for comparing contrastive and trip
 
 ## Repository Structure
 ```bash
-├── data/                      # Optional: placeholder for real datasets (CIFAR-10, MNIST, CARS196, CUB-200)
-├── experiments/               # Training and evaluation scripts
-│   ├── train_toy.py           # Toy data generation and MLP training
-│   ├── train_classification.py# ConvNet training on MNIST/CIFAR-10
-│   └── train_retrieval.py     # ViT‑based retrieval on CARS196, CUB‑200
-├── models/                    # Model definitions
-│   ├── mlp.py
-│   ├── convnet.py
-│   ├── vit_embedder.py
-│   └── losses.py
-├── utils/                     # Data loaders, diagnostics, visualization
-│   ├── synthetic_data.py
-│   ├── metrics.py             # Active ratio, gradient norm, loss decay
-│   └── visualize.py           # t‑SNE plotting
-├── notebooks/                 # Example Jupyter notebooks
-│   └── analysis.ipynb         # Embedding geometry & greedy optimization plots
-├── README.md                  # This file
-└── requirements.txt           # Dependencies
+  ├── data/                      # Optional: placeholder for real datasets (CIFAR-10, MNIST, CARS196, CUB-200)
+  ├── experiments/               # Training and evaluation scripts
+  │   ├── train_toy.py           # Toy data generation and MLP training
+  │   ├── train_classification.py# ConvNet training on MNIST/CIFAR-10
+  │   └── train_retrieval.py     # ViT‑based retrieval on CARS196, CUB‑200
+  ├── models/                    # Model definitions
+  │   ├── mlp.py
+  │   ├── convnet.py
+  │   ├── vit_embedder.py
+  │   └── losses.py
+  ├── utils/                     # Data loaders, diagnostics, visualization
+  │   ├── synthetic_data.py
+  │   ├── metrics.py             # Active ratio, gradient norm, loss decay
+  │   └── visualize.py           # t‑SNE plotting
+  ├── notebooks/                 # Example Jupyter notebooks
+  │   └── analysis.ipynb         # Embedding geometry & greedy optimization plots
+  ├── README.md                  # This file
+  └── requirements.txt           # Dependencies
+
 
 ## Installation
 
