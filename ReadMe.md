@@ -13,6 +13,7 @@ This repository provides code and experiments for comparing contrastive and trip
 - **Diagnostics:** Automatically track and plot loss curves, active ratio, and gradient norms to quantify optimization patterns.
 
 ## Repository Structure
+```bash
 ├── data/                      # Optional: placeholder for real datasets (CIFAR-10, MNIST, CARS196, CUB-200)
 ├── experiments/               # Training and evaluation scripts
 │   ├── train_toy.py           # Toy data generation and MLP training
@@ -46,7 +47,8 @@ This repository provides code and experiments for comparing contrastive and trip
 1. Toy Data Experiments
 
 Generate synthetic clusters and train a simple MLP:
-python experiments/train_toy.py \
+   ```bash
+  python experiments/train_toy.py \
   --n_classes 10 \
   --samples_per_class 200 \
   --mode_spread 1.4 \
@@ -56,14 +58,16 @@ python experiments/train_toy.py \
   --batch_size 64
 
 2. Classification (MNIST / CIFAR‑10)
-   python experiments/train_classification.py \
+  ```bash
+  python experiments/train_classification.py \
   --dataset cifar10 \
   --loss triplet \
   --epochs 50 \
   --batch_size 64
    
 4. Retrieval (CARS196 / CUB‑200‑2011)
-   python experiments/train_retrieval.py \
+   ```bash
+  python experiments/train_retrieval.py \
   --dataset cub \
   --loss contrastive \
   --epochs 30 \
@@ -73,7 +77,7 @@ python experiments/train_toy.py \
 ## Diagnostics & Visualization
 
 After training, run the notebook to visualize embedding geometry and optimization metrics:
-
+```bash
 jupyter notebook notebooks/analysis.ipynb
 
 Citation and Acknowledgments
