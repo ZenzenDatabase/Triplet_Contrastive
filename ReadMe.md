@@ -32,7 +32,7 @@ Generate synthetic clusters and train a simple MLP:
   python toydata.py
   ```
 
-2. Classification (MNIST / CIFAR‑10)
+2. Classification (Toydata/ MNIST / CIFAR‑10)
   ```bash
   python Classification.py
    ```
