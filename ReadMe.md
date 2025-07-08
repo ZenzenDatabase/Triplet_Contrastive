@@ -37,7 +37,7 @@ Generate synthetic clusters and train a simple MLP:
   python Classification.py
    ```
 
-4. Retrieval (CIFAR‑10 / CARS196 / CUB‑200‑2011)
+3. Retrieval (CIFAR‑10 / CARS196 / CUB‑200‑2011)
 ```bash
   python Retrieval.py
   ```
