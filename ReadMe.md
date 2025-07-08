@@ -21,6 +21,8 @@ This repository provides code and experiments for comparing contrastive and trip
 2. Install dependencies:
    pip install -r requirements.txt
 
+3. Python==3.12
+
 ## Usage
 
 1. Toy Data Experiments
